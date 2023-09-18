@@ -1,19 +1,19 @@
 import PropTypes from "prop-types";
-import React, { useState } from "react";
+import React from "react";
 
 const Light = (prop) => {
-    const classList = prop.classList;
-    const [light, selectLight] = useState(classList);
 
     return (
-        <div onClick={() => selectLight(prop.color)} className={'light ' + prop.color +(light == prop.color ? ' shine' : '')}>
+        <div id={prop.color} className={'light ' + prop.color +(prop.selected === prop.color ? ' shine' : '')} onClick={e => prop.changeLight(e)}>
             
         </div>
     );
 };
 
 Light.propTypes = {
-    color: PropTypes.string
+    color: PropTypes.string,
+    selected: PropTypes.string,
 }
 
 export default Light;
+
