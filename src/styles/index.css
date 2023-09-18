@@ -2,14 +2,17 @@
     background-color: black;
     width: 20px;
     height: 50px;
-    margin-left: 287px;
+    margin:auto;
 }
+
 .trafficLight {
     background-color: black;
     padding: 10px;
-    display: inline-block;
+    display: block;
+    width: 170px;
     border-radius: 10px;
-    margin-left: 200px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .light {
@@ -20,19 +23,26 @@
 
 .red {
     background-color: red;
-    margin: 10px;
+
 }
 
 .yellow {
     background-color: yellow;
-    margin: 10px;
+    margin-top: 10px;
+
 }
 
 .green {
     background-color: green;
-    margin: 10px;
+    margin-top: 10px;
+
 }
 
 .shine {
     box-shadow: 0 0 100px 50px rgba(251, 253, 191, 0.953);
+}
+
+.btnStyles {
+    margin: auto;
+    display: block;
 }
